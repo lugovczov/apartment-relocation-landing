@@ -1,11 +1,14 @@
 {
-    "extends": ["stylelint-config-standard", "stylelint-config-recess-order" ],
+    "extends": ["stylelint-config-standard", "stylelint-config-recommended-scss", "stylelint-config-recess-order" ],
     "rules": {
         "indentation": 2,
         "number-leading-zero": null,
         "color-hex-case": null,
         "at-rule-no-unknown": [true, {
-            "ignoreAtRules": ["include", "mixin"]
+          "ignoreAtRules": ["include", "mixin"]
+        }],
+        "at-rule-empty-line-before": ["always", {
+          "ignoreAtRules": ["include", "mixin", "import"]
         }]
     }
 }
