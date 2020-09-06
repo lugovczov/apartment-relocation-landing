@@ -2,6 +2,7 @@
 @import "./vars";
 @import "./header";
 @import "./info";
+@import "./price";
 
 * {
   box-sizing: border-box;
@@ -53,4 +54,20 @@ body {
     opacity: 0.9;
     @include transition-in(0.2);
   }
+}
+
+.site-title {
+  margin-top: 95px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  text-align: center;
+}
+
+.site-subtitle {
+  margin-top: 15px;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  text-align: center;
 }

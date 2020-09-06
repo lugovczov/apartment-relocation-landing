@@ -1,0 +1,51 @@
+@import "./vars";
+
+.price {
+  &-example-wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1330px;
+    margin: 60px auto;
+  }
+
+  &-item {
+    padding: 66px 90px 80px;
+    text-align: center;
+    border: 1px solid $border-main-color;
+    @include transition-in(0.2);
+
+    &:not(:last-child) {
+      margin-right: 23px;
+    }
+
+    &__title {
+      margin-bottom: 44px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 51px;
+    }
+
+    &__value {
+      margin-top: 52px;
+      font-size: 30px;
+      font-weight: 600;
+      line-height: 37px;
+    }
+
+    &__order-text {
+      padding: 13px 78px;
+      margin-top: 52px;
+      font-size: 20px;
+      font-weight: 500;
+      line-height: 24px;
+      background-color: $main-color;
+    }
+
+    &:hover {
+      border: 1px solid $main-color;
+      @include transition-out(0.2);
+    }
+  }
+}
