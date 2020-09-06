@@ -28,6 +28,7 @@ body {
   letter-spacing: 1px;
   background: $main-btn-color;
   border: none;
+  @include transition-out(0.2);
 
   &-wrapper {
     position: relative;
@@ -45,7 +46,10 @@ body {
       border: 1px solid $text-color-btn;
     }
   }
-}
 
-//TODO   snippet transition in/out
-//TODO   snippet-font-face
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+    @include transition-in(0.2);
+  }
+}

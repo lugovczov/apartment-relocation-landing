@@ -13,3 +13,18 @@ $text-color-btn: #F2F2F2;
 //Button colors
 $main-btn-color: #FF352B;
 $phone-btn-color: #3D9BE9;
+
+// transition mixin
+@mixin transition-in($time) {
+  -o-transition: $time+s ease-in;
+  -moz-transition: $time+s ease-in;
+  -webkit-transition: $time+s ease-in;
+  transition: $time+s ease-in;
+}
+
+@mixin transition-out($time) {
+  -o-transition: $time+s ease-out;
+  -moz-transition: $time+s ease-out;
+  -webkit-transition: $time+s ease-out;
+  transition: $time+s ease-out;
+}

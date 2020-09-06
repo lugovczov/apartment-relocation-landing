@@ -29,11 +29,20 @@
     list-style: none;
 
     &__item {
+      z-index: 50;
       margin-right: 48px;
 
       a {
         color: $text-color;
         text-decoration: none;
+        @include transition-out(0.2);
+
+        &:hover {
+          color: #000;
+          text-decoration: underline;
+          cursor: pointer;
+          @include transition-in(0.2);
+        }
       }
     }
   }
@@ -43,9 +52,17 @@
     font-weight: 600;
     line-height: 42px;
 
+    /* stylelint-disable */
     a {
+      /* stylelint-enable */
       color: $text-color;
+      @include transition-out(0.2);
+
       &:hover {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+        @include transition-in(0.2);
       }
     }
   }
@@ -124,12 +141,20 @@
     border: none;
     border-radius: 50%;
     box-shadow: 0 0 0 18px #3d9be963;
+    @include transition-out(0.2);
 
     &::after {
       position: absolute;
       top: 24px;
       right: 23px;
       content: url('../img/phone.svg');
+    }
+
+    &:hover {
+      cursor: pointer;
+      box-shadow: 0 0 0 18px #3d9ce989;
+      opacity: 0.9;
+      @include transition-in(0.2);
     }
   }
 }
