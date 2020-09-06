@@ -1,0 +1,161 @@
+@import "./vars";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1310px;
+  padding: 40px 0;
+  margin: 0 auto;
+  background-color: $main-color;
+
+  &-wrapper {
+    background-color: $main-color;
+  }
+
+  &__logo {
+    margin-right: 137px;
+    margin-left: 2px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 37px;
+    text-transform: uppercase;
+  }
+
+  &-navbar {
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    list-style: none;
+
+    &__item {
+      margin-right: 48px;
+
+      a {
+        color: $text-color;
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__phone {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 42px;
+
+    a {
+      color: $text-color;
+      &:hover {
+      }
+    }
+  }
+}
+
+.header-info {
+  position: relative;
+  max-width: 1306px;
+  padding-bottom: 80px;
+  margin: 0 auto;
+  background-color: $main-color;
+
+  &-wrapper {
+    background-color: $main-color;
+  }
+
+  &__title {
+    max-width: 480px;
+    padding-top: 28px;
+    margin-left: -3px;
+    font-size: 70px;
+    font-weight: bold;
+    line-height: 73px;
+  }
+
+  &__subtitle {
+    margin-top: 18px;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 28px;
+  }
+
+  &__button-order {
+    margin: 48px 0 77px 1px;
+  }
+
+  &__img-human {
+    &-wrapper {
+      position: absolute;
+      top: -80px;
+      left: 614px;
+      z-index: 10;
+
+      &::after {
+        position: absolute;
+        top: 517px;
+        right: 152px;
+        z-index: 15;
+        width: 100px;
+        height: 25px;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 24px;
+        color: #121611;
+        text-transform: uppercase;
+        content: 'Movee';
+        transform: rotate(-7deg);
+      }
+    }
+  }
+
+  &__img-car {
+    position: absolute;
+    top: 53px;
+    right: -110px;
+    z-index: 5;
+  }
+
+  &__button-call {
+    position: absolute;
+    right: 34px;
+    bottom: 57px;
+    width: 100px;
+    height: 100px;
+    background-color: $phone-btn-color;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 0 0 18px #3d9be963;
+
+    &::after {
+      position: absolute;
+      top: 24px;
+      right: 23px;
+      content: url('../img/phone.svg');
+    }
+  }
+}
+
+.description-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 547px;
+
+  .description-item {
+    display: flex;
+
+    &:first-child {
+      margin-right: 10px;
+    }
+
+    &__logo {
+      margin-right: 10px;
+    }
+
+    &__text {
+      font-size: 16px;
+      font-weight: normal;
+      line-height: 21px;
+      white-space: nowrap;
+    }
+  }
+}

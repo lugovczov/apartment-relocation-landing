@@ -1,1 +1,51 @@
-@import "./fonts/fonts";
+@import "./fonts";
+@import "./vars";
+@import "./header";
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: $text-color;
+}
+
+.btn {
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 29px;
+  color: $text-color-btn;
+  letter-spacing: 1px;
+  background: $main-btn-color;
+  border: none;
+
+  &-wrapper {
+    position: relative;
+    width: 304px;
+    height: 60px;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+      width: 304px;
+      height: 60px;
+      content: '';
+      border: 1px solid $text-color-btn;
+    }
+  }
+}
+
+//TODO   snippet transition in/out
+//TODO   snippet-font-face
