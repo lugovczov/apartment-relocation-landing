@@ -1,0 +1,87 @@
+@import "./vars";
+
+.car-park {
+  text-align: center;
+
+  .site-title {
+    margin-top: 105px;
+  }
+
+  &__buttons-wrapper {
+    margin-top: 59px;
+  }
+
+  &__button {
+    width: 201px;
+    padding: 13px 56px;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    background: transparent;
+    border: 1px solid $border-main-color;
+    transition: 0.1s ease-out;
+
+    &:hover,
+    &.active {
+      border: 1px solid $border-second-color;
+      transition: 0.1s ease-in;
+    }
+  }
+}
+
+.car-park__wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1011px;
+  margin: 48px auto 0 auto;
+  text-align: left;
+
+  .arrow_right {
+    position: absolute;
+    top: calc(50% - 38px);
+    right: -105px;
+  }
+
+  .arrow_left {
+    position: absolute;
+    top: calc(50% - 38px);
+    left: -105px;
+  }
+
+  .car-photo {
+    display: block;
+    width: 641px;
+    height: 453px;
+    margin-right: 10px;
+  }
+}
+
+.car-info {
+  width: 250px;
+  margin-top: 52px;
+  margin-bottom: auto;
+  text-align: left;
+
+  .site-subtitle {
+    margin-top: 0;
+    margin-bottom: 22px;
+    text-align: left;
+  }
+
+  &-description {
+    padding-left: 22px;
+    line-height: 49px;
+    list-style-image: url("../img/list_style.svg");
+
+    &__text {
+      padding-left: 8px;
+    }
+  }
+
+  .order-btn {
+    margin-top: 21px;
+  }
+}

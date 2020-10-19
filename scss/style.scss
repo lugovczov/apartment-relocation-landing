@@ -3,11 +3,16 @@
 @import "./header";
 @import "./info";
 @import "./price";
+@import "./car_park";
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+*:focus {
+  outline: 0 !important;
 }
 
 body {
@@ -70,4 +75,31 @@ body {
   font-weight: 600;
   line-height: 29px;
   text-align: center;
+}
+
+.arrow {
+  width: 13px;
+  height: 13px;
+  border: 3px solid #333;
+  border-bottom: none;
+  border-left: none;
+}
+
+.arrow_right {
+  transform: rotate(45deg);
+}
+
+.arrow_left {
+  transform: rotate(225deg);
+}
+
+.order-btn {
+  display: block;
+  width: 250px;
+  padding: 13px 78px;
+  margin-top: 52px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  background-color: $main-color;
 }

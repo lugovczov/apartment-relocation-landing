@@ -34,15 +34,6 @@
       line-height: 37px;
     }
 
-    &__order-text {
-      padding: 13px 78px;
-      margin-top: 52px;
-      font-size: 20px;
-      font-weight: 500;
-      line-height: 24px;
-      background-color: $main-color;
-    }
-
     &:hover {
       border: 1px solid $main-color;
       @include transition-out(0.2);
