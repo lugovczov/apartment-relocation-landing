@@ -8,24 +8,10 @@
   }
 
   &__buttons-wrapper {
-    margin-top: 59px;
-  }
+    margin-top: 60px;
 
-  &__button {
-    width: 201px;
-    padding: 13px 56px;
-    margin: 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    background: transparent;
-    border: 1px solid $border-main-color;
-    transition: 0.1s ease-out;
-
-    &:hover,
-    &.active {
-      border: 1px solid $border-second-color;
-      transition: 0.1s ease-in;
+    .btn {
+      margin: 0 10px;
     }
   }
 }
@@ -35,7 +21,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1011px;
+  width: 1001px;
   margin: 48px auto 0 auto;
   text-align: left;
 
@@ -55,7 +41,6 @@
     display: block;
     width: 641px;
     height: 453px;
-    margin-right: 10px;
   }
 }
 
@@ -81,7 +66,7 @@
     }
   }
 
-  .order-btn {
-    margin-top: 21px;
+  .btn {
+    margin-top: 20px;
   }
 }

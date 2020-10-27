@@ -52,9 +52,7 @@
     font-weight: 600;
     line-height: 42px;
 
-    /* stylelint-disable */
     a {
-      /* stylelint-enable */
       color: $text-color;
       @include transition-out(0.2);
 
@@ -95,8 +93,22 @@
     line-height: 28px;
   }
 
-  &__button-order {
+  &__button-wrapper {
+    position: relative;
+    width: 304px;
+    height: 60px;
     margin: 48px 0 77px 1px;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+      width: 304px;
+      height: 60px;
+      content: '';
+      border: 1px solid $text-color-btn;
+    }
   }
 
   &__img-human {

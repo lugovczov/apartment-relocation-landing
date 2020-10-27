@@ -38,5 +38,9 @@
       border: 1px solid $main-color;
       @include transition-out(0.2);
     }
+
+    .btn {
+      margin-top: 52px;
+    }
   }
 }
