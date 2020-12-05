@@ -4,6 +4,7 @@
 @import "./info";
 @import "./price";
 @import "./car_park";
+@import "./review";
 
 * {
   box-sizing: border-box;
@@ -120,4 +121,14 @@ body {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.star {
+  width: 15px;
+  height: 15px;
+  background: url("../img/star.svg");
+}
+
+.stars-wrapper {
+  display: flex;
 }
