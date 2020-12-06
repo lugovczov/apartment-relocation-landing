@@ -1,0 +1,54 @@
+@import "./vars";
+
+.order {
+  &-wrapper {
+    width: 1000px;
+    padding-top: 53px;
+    padding-bottom: 119px;
+    margin: 0 auto;
+    text-align: left;
+
+    .site-title {
+      margin-bottom: 12px;
+      text-align: left;
+    }
+
+    .custom-checkbox-wrapper {
+      order: 1;
+      margin-right: 5px;
+      margin-left: auto;
+    }
+  }
+
+  &__description {
+    margin-bottom: 9px;
+  }
+
+  &__button-wrapper {
+    position: relative;
+    width: 250px;
+    height: 60px;
+    margin: 0 12px 12px 0;
+
+    &::after {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 2;
+      width: 250px;
+      height: 50px;
+      content: '';
+      border: 1px solid $main-color;
+    }
+  }
+
+  &__form {
+    .main-input {
+      margin-top: 30px;
+    }
+
+    .order__button-wrapper {
+      margin: 25px 9px 12px 0;
+    }
+  }
+}

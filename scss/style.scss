@@ -5,6 +5,7 @@
 @import "./price";
 @import "./car_park";
 @import "./review";
+@import "./order";
 
 * {
   box-sizing: border-box;
@@ -77,6 +78,12 @@ body {
     width: 201px;
     border-color: $border-main-color;
   }
+
+  &_medium {
+    width: 250px;
+    height: 50px;
+    font-size: 20px;
+  }
 }
 
 .site-title {
@@ -123,6 +130,20 @@ body {
   justify-content: center;
 }
 
+.justify-between {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.flex-wrap {
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
 .star {
   width: 15px;
   height: 15px;
@@ -132,3 +153,72 @@ body {
 .stars-wrapper {
   display: flex;
 }
+
+//  ** custom input **
+.main-input {
+  width: 300px;
+  height: 42px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  line-height: 24px;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid $text-color;
+}
+
+.main-input::placeholder {
+  color: $text-color-neutral;
+}
+
+//  ** custom input **
+
+//  ** custom checkbox **
+.custom-checkbox-wrapper {
+  position: relative;
+}
+
+.custom-checkbox__input {
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.custom-checkbox__label {
+  position: relative;
+  top: -3px;
+  padding-left: 25px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.015em;
+}
+
+.custom-checkbox__label::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  content: '';
+  border: 2px solid #333;
+}
+
+.custom-checkbox__input:checked + .custom-checkbox__label::after {
+  position: absolute;
+  top: 3px;
+  left: 5px;
+  display: inline-block;
+  width: 3px;
+  height: 6px;
+  content: '';
+  border: 2px solid #333;
+  border-top: 0;
+  border-left: 0;
+  transform: rotate(45deg);
+}
+//  ** custom checkbox **
