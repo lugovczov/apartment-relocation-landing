@@ -6,6 +6,7 @@
 @import "./car_park";
 @import "./review";
 @import "./order";
+@import "./footer";
 
 * {
   box-sizing: border-box;
@@ -25,26 +26,40 @@ body {
   color: $text-color;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  font-size: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
 .btn {
   position: relative;
-  display: block;
   z-index: 5;
+  display: block;
   width: 250px;
   height: 50px;
-  background: transparent;
   font-size: 20px;
-  color: $text-color;
   font-weight: 500;
   line-height: 50px;
-  letter-spacing: 1px;
+  color: $text-color;
   text-align: center;
+  letter-spacing: 1px;
+  background: transparent;
   border: 1px solid $text-color;
   @include transition-out(0.2);
 
   &.active,
   &:hover {
-    border: 1px solid $border-second-color;
     cursor: pointer;
+    border: 1px solid $border-second-color;
     opacity: 0.9;
     @include transition-in(0.2);
   }
@@ -52,10 +67,10 @@ body {
   &_red {
     width: 304px;
     height: 60px;
-    color: $text-color-btn;
-    background: $main-btn-color;
     font-size: 24px;
     font-weight: 600;
+    color: $text-color-btn;
+    background: $main-btn-color;
     border: none;
 
     &.active,
@@ -105,7 +120,7 @@ body {
 .arrow {
   width: 13px;
   height: 13px;
-  border: 3px solid #333;
+  border: 3px solid $text-color;
   border-bottom: none;
   border-left: none;
 }
@@ -205,7 +220,7 @@ body {
   height: 12px;
   margin-right: 10px;
   content: '';
-  border: 2px solid #333;
+  border: 2px solid $text-color;
 }
 
 .custom-checkbox__input:checked + .custom-checkbox__label::after {
@@ -216,7 +231,7 @@ body {
   width: 3px;
   height: 6px;
   content: '';
-  border: 2px solid #333;
+  border: 2px solid $text-color;
   border-top: 0;
   border-left: 0;
   transform: rotate(45deg);

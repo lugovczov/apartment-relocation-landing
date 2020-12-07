@@ -11,13 +11,13 @@
   <body>
     <!-- begin header -->
     <header class="header-wrapper">
-      <div class="header">
+      <div class="header" id="header">
         <h2 class="header__logo">Movee</h2>
         <ul class="header-navbar">
-          <li class="header-navbar__item"><a href="price">Цены</a></li>
-          <li class="header-navbar__item"><a href="car-park">Автопарк</a></li>
-          <li class="header-navbar__item"><a href="review">Отзывы</a></li>
-          <li class="header-navbar__item"><a href="order">Контакты</a></li>
+          <li class="header-navbar__item"><a href="#price">Цены</a></li>
+          <li class="header-navbar__item"><a href="#car-park">Автопарк</a></li>
+          <li class="header-navbar__item"><a href="#review">Отзывы</a></li>
+          <li class="header-navbar__item"><a href="#order">Контакты</a></li>
         </ul>
         <p class="header__phone"><a href="tel:8(800)-080-12-13">8(800)-080-12-13</a></p>
       </div>
@@ -254,8 +254,68 @@
     <!-- end map -->
 
     <!-- begin footer -->
-    <footer class="footer">
-
+    <footer class="footer" id="footer">
+        <div class="footer-wrapper d-flex justify-between">
+            <div class="footer-column logo">
+                <h2 class="header__logo">Movee</h2>
+                <a href="#" class="footer__link">
+                    Политика конфиденциальнности
+                </a>
+                <a href="#" class="footer__link">
+                    Соглашение на обработку персональных данных
+                </a>
+            </div>
+            <ul class="footer-column nav">
+                <li class="footer-column__navigation">
+                    <a href="#header">Главная</a>
+                </li>
+                <li class="footer-column__navigation">
+                    <a href="#price">Цена</a>
+                </li>
+                <li class="footer-column__navigation">
+                    <a href="#car-park">Автопарк</a>
+                </li>
+                <li class="footer-column__navigation">
+                    <a href="#review">Отзывы</a>
+                </li>
+                <li class="footer-column__navigation">
+                    <a href="#footer">Контакты</a>
+                </li>
+            </ul>
+            <div class="footer-column social">
+                <ul class="d-flex justify-between">
+                    <li>
+                        <a href="https://www.youtube.com/">
+                            <img src="./img/youtube.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vk.com/">
+                            <img src="./img/vk.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/">
+                            <img src="./img/fb.svg"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/">
+                            <img src="./img/inst.svg"/>
+                        </a>
+                    </li>
+                </ul>
+                <a href="mailto:hello@movee.ru" class="social__link">hello@movee.ru</a>
+            </div>
+            <div class="footer-column tel">
+                <a class="btn" href="#order">
+                    Обратный звонок
+                </button>
+                <a href="tel:8(800)-080-12-13" class="tel__telephone">
+                    8 (800)-080-12-13
+                </a>
+            </div>
+        </div>
     </footer>
     <!-- end footer -->
   <script src="./js/script.js"></script>

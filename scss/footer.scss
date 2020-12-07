@@ -1,0 +1,84 @@
+@import "./vars";
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 101px;
+  background: $main-color;
+
+  &-wrapper {
+    width: 1308px;
+    margin: 0 auto;
+  }
+
+  &-column {
+    &.logo {
+      max-width: 240px;
+
+      .header__logo {
+        margin-bottom: 46px;
+      }
+
+      .footer__link {
+        display: block;
+        margin-top: 39px;
+      }
+    }
+
+    &.nav {
+      margin-left: 30px;
+      font-size: 21px;
+      letter-spacing: -0.4px;
+    }
+
+    &__navigation {
+      margin-bottom: 13px;
+    }
+
+    &.social {
+      max-width: 170px;
+      margin-left: 7px;
+
+      ul {
+        margin-top: 6px;
+
+        li:not(:last-child) {
+          margin-right: 31px;
+        }
+      }
+    }
+
+    &.tel {
+      .btn {
+        height: 44px;
+        margin-top: 4px;
+        font-size: 18px;
+        line-height: 44px;
+      }
+    }
+
+    .tel__telephone,
+    .social__link {
+      position: relative;
+      left: 50%;
+      display: inline-block;
+      margin-top: 15px;
+      font-size: 20px;
+      transform: translateX(-50%);
+
+      &::after {
+        position: absolute;
+        top: 25px;
+        left: 0;
+        display: inline-block;
+        width: 100%;
+        height: 1px;
+        content: '';
+        background: $text-color;
+      }
+    }
+
+    .tel__telephone {
+      margin-top: 7px;
+    }
+  }
+}
