@@ -6,6 +6,7 @@
 @import "./car_park";
 @import "./review";
 @import "./order";
+@import "./map";
 @import "./footer";
 
 * {
@@ -149,6 +150,12 @@ ul {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+}
+
+.justify-end {
+  -ms-flex-pack: end;
+  -webkit-box-pack: end;
+  justify-content: flex-end;
 }
 
 .flex-wrap {

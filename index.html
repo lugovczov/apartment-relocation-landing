@@ -7,6 +7,7 @@
       <title>Apartment relocation</title>
       <link rel="stylesheet" href="./css/style.css">
       <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+      <script src="https://api-maps.yandex.ru/2.1/?apikey=31733b63-e752-4a90-bfba-456f2d355a52&lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <!-- begin header -->
@@ -248,7 +249,7 @@
     <!-- end order -->
 
     <!-- begin map -->
-    <div class="map">
+    <div class="map" id="map" style="width: 1924px; height: 666px;">
 
     </div>
     <!-- end map -->
@@ -310,7 +311,7 @@
             <div class="footer-column tel">
                 <a class="btn" href="#order">
                     Обратный звонок
-                </button>
+                </a>
                 <a href="tel:8(800)-080-12-13" class="tel__telephone">
                     8 (800)-080-12-13
                 </a>

@@ -1,0 +1,49 @@
+@import "./vars";
+
+#map {
+  margin: 0 auto;
+
+  .header__logo {
+    margin-top: 30px;
+    margin-left: 24px;
+  }
+}
+
+.map-list {
+  margin-top: 31px;
+  margin-left: 45px;
+  line-height: 40px;
+  list-style-image: url(../img/yellow_list_style.svg);
+
+  &__item {
+    padding-left: 8px;
+    margin: 0;
+  }
+}
+
+.map-social {
+  margin-top: 41px;
+  margin-bottom: 24px;
+
+  li:not(:last-child) {
+    margin-right: 26px;
+  }
+}
+
+ymaps.ymaps-2-1-77-balloon__content {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: $text-color;
+}
+
+ymaps.ymaps-2-1-77-balloon {
+  position: absolute !important;
+  top: -174px !important;
+  left: -516px !important;
+  width: 369px !important;
+}
+
+ymaps.ymaps-2-1-77-balloon__close,
+ymaps.ymaps-2-1-77-balloon__tail:after {
+  display: none;
+}
