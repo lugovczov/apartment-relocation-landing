@@ -1,3 +1,25 @@
+document.addEventListener("DOMContentLoaded", () => {
+    const bulletsName = ["Газели", "Каблуки", "Грузовики"];
+    const mySwiper = new Swiper('.car-park__wrapper .swiper-container', {
+        loop: true,
+
+        navigation: {
+            nextEl: '.arrow_right',
+            prevEl: '.arrow_left',
+        },
+
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+
+            renderBullet: function (i) {
+                return '<button class="btn btn_small swiper-pagination-bullet">'+ bulletsName[i] +'</button>';
+            }
+        },
+
+    });
+})
+
 ymaps.ready(initMap);
 
 function initMap() {
@@ -41,4 +63,3 @@ function initMap() {
     placemark.balloon.open();
 
 }
-

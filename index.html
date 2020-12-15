@@ -9,6 +9,8 @@
     <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
     <script src="https://api-maps.yandex.ru/2.1/?apikey=31733b63-e752-4a90-bfba-456f2d355a52&lang=ru_RU"
             type="text/javascript"></script>
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="./libs/swiper/swiper-bundle.min.css">
 </head>
 <body>
 <!-- begin header -->
@@ -131,30 +133,69 @@
 <div class="car-park" id="car-park">
     <h3 class="site-title">Автопарк</h3>
     <p class="site-subtitle">10 видов автомобилей от 800 кг до 10 тонн</p>
-    <div class="car-park__buttons-wrapper d-flex justify-center">
-        <button class="btn btn_small active">Газели</button>
-        <button class="btn btn_small">Каблуки</button>
-        <button class="btn btn_small">Грузовики</button>
-    </div>
-    <!-- TODO: slider -->
-    <div class="car-park__wrapper">
-        <div class="arrow arrow_left"></div>
 
-        <div class="car-info">
-            <p class="site-subtitle price-item__title">Газель 3 метра</p>
-            <ul class="car-info-description">
-                <li class="car-info-description__text">Ширина 2 м</li>
-                <li class="car-info-description__text">Высота 2 м</li>
-                <li class="car-info-description__text">Объем 16 м³</li>
-                <li class="car-info-description__text">Грузоподъемность 1,5 т</li>
-            </ul>
-            <a class="btn btn_yellow">Заказать</a>
+    <div class="car-park__wrapper">
+        <div class="car-park__buttons-wrapper d-flex justify-center swiper-pagination">
+            <button class="btn btn_small active">Газели</button>
+            <button class="btn btn_small">Каблуки</button>
+            <button class="btn btn_small">Грузовики</button>
         </div>
 
-        <img class="car-photo" src="img/car_example.png" alt=""/>
+        <div class="arrow arrow_left"></div>
+
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="car swiper-slide">
+                    <div class="car-info">
+                        <p class="site-subtitle price-item__title">Газель 3 метра</p>
+                        <ul class="car-info-description">
+                            <li class="car-info-description__text">Ширина 2 м</li>
+                            <li class="car-info-description__text">Высота 2 м</li>
+                            <li class="car-info-description__text">Объем 16 м³</li>
+                            <li class="car-info-description__text">Грузоподъемность 1,5 т</li>
+                        </ul>
+                        <a class="btn btn_yellow">Заказать</a>
+                    </div>
+
+                    <img class="car-photo" src="img/car_example.png" alt=""/>
+                </div>
+
+                <div class="car swiper-slide">
+                    <div class="car-info">
+                        <p class="site-subtitle price-item__title">Газель 3 метра</p>
+                        <ul class="car-info-description">
+                            <li class="car-info-description__text">Ширина 2 м</li>
+                            <li class="car-info-description__text">Высота 2 м</li>
+                            <li class="car-info-description__text">Объем 16 м³</li>
+                            <li class="car-info-description__text">Грузоподъемность 1,5 т</li>
+                        </ul>
+                        <a class="btn btn_yellow">Заказать</a>
+                    </div>
+
+                    <img class="car-photo" src="img/car_example.png" alt=""/>
+                </div>
+
+                <div class="car swiper-slide">
+                    <div class="car-info">
+                        <p class="site-subtitle price-item__title">Газель 3 метра</p>
+                        <ul class="car-info-description">
+                            <li class="car-info-description__text">Ширина 2 м</li>
+                            <li class="car-info-description__text">Высота 2 м</li>
+                            <li class="car-info-description__text">Объем 16 м³</li>
+                            <li class="car-info-description__text">Грузоподъемность 1,5 т</li>
+                        </ul>
+                        <a class="btn btn_yellow">Заказать</a>
+                    </div>
+
+                    <img class="car-photo" src="img/car_example.png" alt=""/>
+                </div>
+            </div>
+        </div>
 
         <div class="arrow arrow_right"></div>
     </div>
+
 </div>
 <!-- end car-park -->
 
@@ -328,6 +369,10 @@
     </div>
 </footer>
 <!-- end footer -->
+<script src="https://api-maps.yandex.ru/2.1/?apikey=31733b63-e752-4a90-bfba-456f2d355a52&lang=ru_RU"
+        type="text/javascript"></script>
+<script src="./libs/swiper/swiper-bundle.js"></script>
+<script src="./libs/swiper/swiper-bundle.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
