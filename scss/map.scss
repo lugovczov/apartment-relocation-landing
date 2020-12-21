@@ -30,20 +30,20 @@
   }
 }
 
-ymaps.ymaps-2-1-77-balloon__content {
+ymaps.ymaps-2-1-78-balloon__content {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   color: $text-color;
 }
 
-ymaps.ymaps-2-1-77-balloon {
+ymaps.ymaps-2-1-78-balloon {
   position: absolute !important;
   top: -173px !important;
   left: -516px !important;
   width: 369px !important;
 }
 
-ymaps.ymaps-2-1-77-balloon__close,
-ymaps.ymaps-2-1-77-balloon__tail:after {
+ymaps.ymaps-2-1-78-balloon__close,
+ymaps.ymaps-2-1-78-balloon__tail::after {
   display: none;
 }

@@ -57,6 +57,7 @@ ul {
   border: 1px solid $text-color;
   @include transition-out(0.2);
 
+  &.swiper-pagination-bullet-active,
   &.active,
   &:hover {
     cursor: pointer;

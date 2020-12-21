@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
         },
 
     });
-})
+});
 
 ymaps.ready(initMap);
 
@@ -29,7 +29,6 @@ function initMap() {
         behaviors: ['default', 'scrollZoom'],
         controls: []
     });
-
 
     var placemark = new ymaps.Placemark(myMap.getCenter(), {
         balloonContentHeader: '<h2 class="header__logo">Movee</h2>',
@@ -61,5 +60,4 @@ function initMap() {
         preset: 'islands#redDotIconWithCaption'
     }))
     placemark.balloon.open();
-
 }

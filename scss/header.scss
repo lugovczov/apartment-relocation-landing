@@ -52,6 +52,7 @@
     font-weight: 600;
     line-height: 42px;
 
+    /* stylelint-disable-next-line no-descending-specificity */
     a {
       color: $text-color;
       @include transition-out(0.2);
